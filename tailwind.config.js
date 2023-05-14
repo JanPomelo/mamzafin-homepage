@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./dist/*.html', './src/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ['Gaegu'],
+      },
+    },
   },
   variants: {
     extend: {},
