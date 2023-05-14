@@ -40,7 +40,7 @@ const loadMainTab = () => {
   const mainTabContent = loadMainTabContent();
   for (const [key, value] of Object.entries(mainTabContent)) {
     // eslint-disable-next-line max-len
-    value.classList = ['text-xl w-20 text-center mt-0 rounded-b-md border-solid border-b-2 border-b-black hover:bg-green-400'];
+    value.classList = ['text-xl w-20 text-center mt-0 rounded-b-md border-solid border-b-2 border-b-black hover:bg-green-400 active:bg-green-600 shadow-xl active:shadow-2xl'];
     mainTab.appendChild(value);
   }
   return mainTab;
