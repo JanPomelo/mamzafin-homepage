@@ -1,5 +1,5 @@
 import Logo from './img/logo.jpeg';
-
+import {loadHome} from './homeLoad.js';
 
 const loadHeaderContent = () => {
   const helperDiv = document.createElement('div');
@@ -50,6 +50,7 @@ const loadMain = () => {
   const main = document.createElement('main');
   main.classList = ['w-screen flex-grow'];
   main.appendChild(loadMainTab());
+  main.appendChild(loadHome());
   return main;
 };
 
