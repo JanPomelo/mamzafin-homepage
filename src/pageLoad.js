@@ -29,9 +29,21 @@ const loadMain = () => {
   return main;
 };
 
+const loadFooterContent = () => {
+  const text1 = document.createElement('p');
+  const text2 = document.createElement('p');
+  text1.innerText = 'A Project done by JanPomelo';
+  text2.innerText = 'All Rights Reserved';
+  return {text1, text2};
+};
+
 const loadFooter = () => {
   const footer = document.createElement('footer');
-  footer.classList = ['bg-green-600 h-12 w-screen'];
+  footer.classList = ['bg-green-600 h-12 w-screen text-center'];
+  const footerContent = loadFooterContent();
+  for (const [key, value] of Object.entries(footerContent)) {
+    footer.appendChild(value);
+  }
   return footer;
 };
 
