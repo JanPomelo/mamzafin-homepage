@@ -23,9 +23,33 @@ const loadHeader = () => {
   return header;
 };
 
+const loadMainTabContent = () => {
+  const home = document.createElement('div');
+  home.innerText = 'Home';
+  const menu = document.createElement('div');
+  menu.innerText = 'Menu';
+  const contact = document.createElement('div');
+  contact.innerText = 'Contact';
+  return {home, menu, contact};
+};
+
+const loadMainTab = () => {
+  const mainTab = document.createElement('nav');
+  // eslint-disable-next-line max-len
+  mainTab.classList = ['h-10 bg-green-200 flex flex-column justify-around items-start'];
+  const mainTabContent = loadMainTabContent();
+  for (const [key, value] of Object.entries(mainTabContent)) {
+    // eslint-disable-next-line max-len
+    value.classList = ['text-xl w-20 text-center mt-0 rounded-b-md border-solid border-b-2 border-b-black hover:bg-green-400'];
+    mainTab.appendChild(value);
+  }
+  return mainTab;
+};
+
 const loadMain = () => {
   const main = document.createElement('main');
   main.classList = ['w-screen flex-grow'];
+  main.appendChild(loadMainTab());
   return main;
 };
 
@@ -46,7 +70,6 @@ const loadFooter = () => {
   }
   return footer;
 };
-
 
 const loadPage = () => {
   return [loadHeader(), loadMain(), loadFooter()];
