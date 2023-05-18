@@ -5,7 +5,7 @@ const loadwrapperDiv = () => {
   // create div to wrap the content and the img
   const wrapperDiv = document.createElement('div');
   wrapperDiv.classList = [
-    'flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-10',
+    'flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-10 bg-green-300 rounded-xl p-3',
   ];
   // create div for contentwrapping and an img element
   const content = document.createElement('div');
@@ -15,7 +15,7 @@ const loadwrapperDiv = () => {
   // create content Text
   const header = document.createElement('h2');
   header.innerText = 'Welcome to Mamzafin Cafe!';
-  header.classList = ['text-3xl pt-2 pb-2'];
+  header.classList = ['text-3xl pt-0 pb-2'];
   const text = document.createElement('p');
   // eslint-disable-next-line max-len, quotes
   text.innerText =
@@ -35,7 +35,9 @@ const loadwrapperDiv = () => {
 const loadApproach = () => {
   // create div to wrap content and img
   const wrapperDiv = document.createElement('div');
-  wrapperDiv.classList = ['flex flex-col-reverse gap-3 md:grid grid-cols-2 md:gap-10'];
+  wrapperDiv.classList = [
+    'flex flex-col-reverse gap-3 md:grid grid-cols-2 md:gap-10 bg-green-300 rounded-xl p-3',
+  ];
   // create img
   const approachImage = document.createElement('img');
   approachImage.src = Logo;
@@ -44,7 +46,7 @@ const loadApproach = () => {
   const content = document.createElement('div');
   const header = document.createElement('h2');
   header.innerText = 'Our Approach';
-  header.classList = ['text-3xl pt-2 pb-2'];
+  header.classList = ['text-3xl pt-0 pb-2'];
   // create paragraph for the text
   const text = document.createElement('section');
   text.innerText =
@@ -61,7 +63,9 @@ const loadApproach = () => {
 
 const loadIngredients = () => {
   const wrapperDiv = document.createElement('div');
-  wrapperDiv.classList = ['flex flex-col gap-3 md:grid grid-cols-2 md:gap-10'];
+  wrapperDiv.classList = [
+    'flex flex-col gap-3 md:grid grid-cols-2 md:gap-10 bg-green-300 rounded-xl p-3',
+  ];
   // create img
   const ingredientImage = document.createElement('img');
   ingredientImage.src = Logo;
@@ -69,7 +73,7 @@ const loadIngredients = () => {
   // create div to wrap content
   const content = document.createElement('div');
   const header = document.createElement('h2');
-  header.classList = ['text-3xl pt-2 pb-2'];
+  header.classList = ['text-3xl pt-0 pb-2'];
   header.innerText = 'Finest Ingredients';
   const text = document.createElement('section');
   text.classList = ['text-sm md:text-xl'];
