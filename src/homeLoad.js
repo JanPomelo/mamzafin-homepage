@@ -42,12 +42,16 @@ const loadApproach = () => {
   approachImage.classList = ['w-3/4 self-center justify-self-center'];
   // create div to wrap content
   const content = document.createElement('div');
+  const header = document.createElement('h2');
+  header.innerText = 'Our Approach';
+  header.classList = ['text-3xl pt-2 pb-2'];
   // create paragraph for the text
   const text = document.createElement('section');
   text.innerText =
     'At Mamzafin, we believe in creating a laid-back and cozy atmosphere that feels like home. Our approach is all about embracing the natural world around us. Step into our café and you\'ll find yourself surrounded by lush greenery, bringing the beauty of nature indoors. We strive to make every visit an experience that\'s relaxed, comfortable, and inviting. So come on over, kick back, and enjoy the perfect blend of casual charm and natural serenity at Mamzafin Café.';
   text.classList = ['text-sm md:text-xl'];
   // add text to content
+  content.appendChild(header);
   content.appendChild(text);
   // add content and img to wrapperDiv
   wrapperDiv.appendChild(approachImage);
