@@ -15,3 +15,17 @@
 .bg-green-300 {
 	background-color: #bbd6b8;
 }
+#home:hover,
+#home:focus,
+#menu:hover,
+#menu:focus,
+#contact:hover,
+#contact:focus {
+	background-color: #bbd6b8;
+}
+
+#home:active,
+#menu:active,
+#contact:active {
+	background-color: #94af9f;
+}

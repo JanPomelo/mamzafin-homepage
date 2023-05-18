@@ -17,6 +17,7 @@ const loadHeader = () => {
   // eslint-disable-next-line max-len
   header.classList = ['bg-green-600 h-12 w-screen grid grid-cols-3 grid-rows-1 justify-center pr-2 pl-2'];
   const headerContent = loadHeaderContent();
+  // eslint-disable-next-line no-unused-vars
   for (const [key, value] of Object.entries(headerContent)) {
     header.appendChild(value);
   }
@@ -41,6 +42,7 @@ const loadMainTab = () => {
   // eslint-disable-next-line max-len
   mainTab.classList = ['h-10 bg-green-200 flex flex-column justify-around items-start'];
   const mainTabContent = loadMainTabContent();
+  // eslint-disable-next-line no-unused-vars
   for (const [key, value] of Object.entries(mainTabContent)) {
     // eslint-disable-next-line max-len
     value.classList = ['text-xl w-20 text-center mt-0 rounded-b-md border-solid border-b-2 border-b-black hover:bg-green-400 active:bg-green-600 shadow-xl active:shadow-2xl'];
@@ -70,6 +72,7 @@ const loadFooter = () => {
   const footer = document.createElement('footer');
   footer.classList = ['bg-green-600 h-12 w-screen text-center'];
   const footerContent = loadFooterContent();
+  // eslint-disable-next-line no-unused-vars
   for (const [key, value] of Object.entries(footerContent)) {
     footer.appendChild(value);
   }
