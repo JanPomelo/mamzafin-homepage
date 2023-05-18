@@ -26,10 +26,13 @@ const loadHeader = () => {
 const loadMainTabContent = () => {
   const home = document.createElement('div');
   home.innerText = 'Home';
+  home.id = 'home';
   const menu = document.createElement('div');
   menu.innerText = 'Menu';
+  menu.id = 'menu';
   const contact = document.createElement('div');
   contact.innerText = 'Contact';
+  contact.id = 'contact';
   return {home, menu, contact};
 };
 
@@ -49,6 +52,7 @@ const loadMainTab = () => {
 const loadMain = () => {
   const main = document.createElement('main');
   main.classList = ['w-screen flex-grow'];
+  main.id = 'main';
   main.appendChild(loadMainTab());
   main.appendChild(loadHome());
   return main;
