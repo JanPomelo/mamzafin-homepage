@@ -1,34 +1,34 @@
 /* eslint-disable max-len */
 import Logo from './img/logo.jpeg';
 
-const loadGreetingDiv = () => {
+const loadwrapperDiv = () => {
   // create div to wrap the content and the img
-  const greetingDiv = document.createElement('div');
-  greetingDiv.classList = [
+  const wrapperDiv = document.createElement('div');
+  wrapperDiv.classList = [
     'flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-10',
   ];
   // create div for contentwrapping and an img element
-  const greetingContent = document.createElement('div');
+  const content = document.createElement('div');
   const greetingImg = document.createElement('img');
   greetingImg.src = Logo;
   // create content Text
-  const greetingHeader = document.createElement('h2');
-  greetingHeader.innerText = 'Welcome to Mamzafin Cafe!';
-  greetingHeader.classList = ['text-3xl pt-2 pb-2'];
-  const greetingText = document.createElement('p');
+  const header = document.createElement('h2');
+  header.innerText = 'Welcome to Mamzafin Cafe!';
+  header.classList = ['text-3xl pt-2 pb-2'];
+  const text = document.createElement('p');
   // eslint-disable-next-line max-len, quotes
-  greetingText.innerText =
+  text.innerText =
     // eslint-disable-next-line max-len
     'Welcome to Mamzafin, the coziest café in Chiang Mai\'s Nimman district. Enjoy our handpicked coffees and freshly cooked snacks made with love. Join us in celebrating Chiang Mai\'s famous coffee culture. Mamzafin Café: where good vibes and great flavors meet.';
-  greetingText.classList = ['text-sm md:text-xl'];
+  text.classList = ['text-sm md:text-xl'];
 
   // nest the Header and Text into the Content Text div
-  greetingContent.appendChild(greetingHeader);
-  greetingContent.appendChild(greetingText);
-  // nest the content and img in the greetingDiv
-  greetingDiv.appendChild(greetingContent);
-  greetingDiv.appendChild(greetingImg);
-  return greetingDiv;
+  content.appendChild(header);
+  content.appendChild(text);
+  // nest the content and img in the wrapperDiv
+  wrapperDiv.appendChild(content);
+  wrapperDiv.appendChild(greetingImg);
+  return wrapperDiv;
 };
 
 const loadApproach = () => {
@@ -59,7 +59,7 @@ const loadHome = () => {
   home.classList = [
     'h-full bg-gray-100 w-screen pr-3 pl-3 pt-3 md:pr-20 md:pl-20 md:pt-10 md:pb-10 flex flex-col gap-10',
   ];
-  home.appendChild(loadGreetingDiv());
+  home.appendChild(loadwrapperDiv());
   home.appendChild(loadApproach());
   return home;
 };
