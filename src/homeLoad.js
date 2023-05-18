@@ -11,6 +11,7 @@ const loadwrapperDiv = () => {
   const content = document.createElement('div');
   const greetingImg = document.createElement('img');
   greetingImg.src = Logo;
+  greetingImg.classList = ['w-3/4 self-center justify-self-center'];
   // create content Text
   const header = document.createElement('h2');
   header.innerText = 'Welcome to Mamzafin Cafe!';
@@ -38,6 +39,7 @@ const loadApproach = () => {
   // create img
   const approachImage = document.createElement('img');
   approachImage.src = Logo;
+  approachImage.classList = ['w-3/4 self-center justify-self-center'];
   // create div to wrap content
   const content = document.createElement('div');
   // create paragraph for the text
