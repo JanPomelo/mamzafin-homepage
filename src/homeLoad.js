@@ -59,14 +59,37 @@ const loadApproach = () => {
   return wrapperDiv;
 };
 
+const loadIngredients = () => {
+  const wrapperDiv = document.createElement('div');
+  wrapperDiv.classList = ['flex flex-col gap-3 md:grid grid-cols-2 md:gap-10'];
+  // create img
+  const ingredientImage = document.createElement('img');
+  ingredientImage.src = Logo;
+  ingredientImage.classList = ['w-3/4 self-center justify-self-center'];
+  // create div to wrap content
+  const content = document.createElement('div');
+  const header = document.createElement('h2');
+  header.classList = ['text-3xl pt-2 pb-2'];
+  header.innerText = 'Finest Ingredients';
+  const text = document.createElement('section');
+  text.classList = ['text-sm md:text-xl'];
+  text.innerText = 'At our café, we\'re passionate about using the finest, high-quality ingredients in every cup of coffee, beverage, and snack we serve. From carefully sourced beans to the fresh, natural elements we infuse into our recipes, we believe in delivering exceptional flavors that tantalize your taste buds. Indulge in the rich aromas and delectable flavors that come from our commitment to using only the best ingredients. In our café, we take pride in offering you a truly remarkable culinary experience.';
+  content.appendChild(header);
+  content.appendChild(text);
+  // add content and img to wrapperDiv
+  wrapperDiv.appendChild(content);
+  wrapperDiv.appendChild(ingredientImage);
+  return wrapperDiv;
+};
 
 const loadHome = () => {
   const home = document.createElement('div');
   home.classList = [
-    'h-full bg-gray-100 w-screen pr-3 pl-3 pt-3 md:pr-20 md:pl-20 md:pt-10 md:pb-10 flex flex-col gap-10',
+    'h-full bg-gray-100 w-screen p-3 md:pr-20 md:pl-20 md:pt-10 md:pb-10 flex flex-col gap-10',
   ];
   home.appendChild(loadwrapperDiv());
   home.appendChild(loadApproach());
+  home.appendChild(loadIngredients());
   return home;
 };
 
