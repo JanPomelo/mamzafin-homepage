@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import Inside from './img/mamzafinInside.jpg';
-import FrontView from './img/mamzafinFront.jpg';
+import FrontView from './img/mamzafinGood1.jpg';
 import Sirup from './img/sirup.jpg';
 
 const loadwrapperDiv = () => {

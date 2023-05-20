@@ -37,7 +37,7 @@ const loadMenuItem = (productName, productPrice, productImage) => {
 const loadMenu = () => {
   const menu = document.createElement('div');
   menu.classList = [
-    'h-full bg-gray-100 w-screen p-3 md:pr-20 md:pl-20 md:pt-10 md:pb-10 flex flex-col gap-3 justify-start items-center md:grid md:grid-cols-2 grid-rows-auto lg:grid lg:grid-cols-3',
+    'h-full bg-gray-100 w-screen p-3 md:pr-20 md:pl-20 md:pt-10 md:pb-10 flex flex-col gap-3 justify-start items-center lg:grid lg:grid-cols-2 grid-rows-auto xl:grid xl:grid-cols-3',
   ];
   menu.id = 'actualContent';
   menu.appendChild(loadMenuItem('Americano', '50 Baht', AmericanoBlack));
