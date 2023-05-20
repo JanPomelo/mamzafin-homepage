@@ -1,5 +1,7 @@
 /* eslint-disable max-len */
-import Logo from './img/logo.jpeg';
+import Inside from './img/mamzafinInside.jpg';
+import FrontView from './img/mamzafinFront.jpg';
+import Sirup from './img/sirup.jpg';
 
 const loadwrapperDiv = () => {
   // create div to wrap the content and the img
@@ -10,8 +12,8 @@ const loadwrapperDiv = () => {
   // create div for contentwrapping and an img element
   const content = document.createElement('div');
   const greetingImg = document.createElement('img');
-  greetingImg.src = Logo;
-  greetingImg.classList = ['w-3/4 self-center justify-self-center'];
+  greetingImg.src = FrontView;
+  greetingImg.classList = ['w-3/4 self-center justify-self-center rounded-3xl'];
   // create content Text
   const header = document.createElement('h2');
   header.innerText = 'Welcome to Mamzafin Cafe!';
@@ -40,8 +42,9 @@ const loadApproach = () => {
   ];
   // create img
   const approachImage = document.createElement('img');
-  approachImage.src = Logo;
-  approachImage.classList = ['w-3/4 self-center justify-self-center'];
+  approachImage.src = Inside;
+  approachImage.classList = [
+    'w-3/4 self-center justify-self-center rounded-3xl'];
   // create div to wrap content
   const content = document.createElement('div');
   const header = document.createElement('h2');
@@ -68,8 +71,10 @@ const loadIngredients = () => {
   ];
   // create img
   const ingredientImage = document.createElement('img');
-  ingredientImage.src = Logo;
-  ingredientImage.classList = ['w-3/4 self-center justify-self-center'];
+  ingredientImage.src = Sirup;
+  ingredientImage.classList = [
+    'w-3/4 self-center justify-self-center rounded-3xl',
+  ];
   // create div to wrap content
   const content = document.createElement('div');
   const header = document.createElement('h2');
