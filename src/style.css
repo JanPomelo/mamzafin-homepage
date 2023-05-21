@@ -15,6 +15,10 @@
 .bg-green-300 {
 	background-color: #bbd6b8;
 }
+
+.border-green-600 {
+	border-color: #94af9f;
+}
 #home:hover,
 #home:focus,
 #menu:hover,
