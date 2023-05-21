@@ -53,7 +53,7 @@ const loadMainTab = () => {
 
 const loadMain = () => {
   const main = document.createElement('main');
-  main.classList = ['w-screen flex-grow'];
+  main.classList = ['w-screen flex-grow pb-5'];
   main.id = 'main';
   main.appendChild(loadMainTab());
   main.appendChild(loadHome());
