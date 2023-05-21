@@ -33,3 +33,11 @@
 #contact:active {
 	background-color: #94af9f;
 }
+
+html::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+html {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}

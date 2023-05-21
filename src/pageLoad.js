@@ -8,7 +8,7 @@ const loadHeaderContent = () => {
   heading.classList = ['text-center self-center font-bold text-3xl'];
   const image = new Image();
   image.src = Logo;
-  image.classList = ['h-full mix-blend-multiply ml-auto'];
+  image.classList = ['h-full mix-blend-multiply ml-auto mr-3'];
   return {helperDiv, heading, image};
 };
 
