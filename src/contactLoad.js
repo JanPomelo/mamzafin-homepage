@@ -27,10 +27,15 @@ const loadContentDiv = () => {
 };
 
 const loadMap = () => {
+  const a = document.createElement('a');
+  a.href =
+      'https://www.google.com/maps/place/Mamzafin/@18.797666,98.9621844,15z/data=!4m6!3m5!1s0x30da3b59bafcc735:0xf5302a0fff9ba43b!8m2!3d18.7974092!4d98.9731661!16s%2Fg%2F11s56mnsxy';
+  a.target = '_blank';
   const map = document.createElement('img');
   map.src = Map;
   map.classList = [' w-full sm:w-4/5 lg:w-full rounded-3xl border-4 border-green-600'];
-  return map;
+  a.appendChild(map);
+  return a;
 };
 
 const loadContact = () => {
